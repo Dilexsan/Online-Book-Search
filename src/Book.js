@@ -14,7 +14,7 @@ const BookSearch = () => {
     event.preventDefault();
     try {
       const response = await axios.get(
-        `https://www.googleapis.com/books/v1/volumes?q=${query}&key=${yourapikey}`
+        `https://www.googleapis.com/books/v1/volumes?q=${query}&key=${yourApiKey}`
       );
       setBooks(response.data.items);
     } catch (error) {
