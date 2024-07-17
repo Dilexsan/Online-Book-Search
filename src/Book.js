@@ -9,7 +9,7 @@ const BookSearch = () => {
   const handleChange = (event) => {
     setQuery(event.target.value);
   };
-
+  
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
